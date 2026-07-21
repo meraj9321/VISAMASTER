@@ -1,0 +1,86 @@
+/* NAVBAR */
+.navbar {
+  transition: 0.3s;
+}
+
+/* LOGO */
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #1d3557;
+}
+
+.logo-text span {
+  background: linear-gradient(90deg, #ffd700, #ffc107, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LINKS */
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #444;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 8px 15px !important;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37;
+}
+
+.navbar-nav .nav-link.active {
+  color: #d4af37;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 70%;
+}
+
+/* BUTTONS */
+
+.btn-login {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #d4af37;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-register {
+  background: linear-gradient(90deg, #ffd700, #ffc107, #b8860b);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.45);
+}
