@@ -1,14 +1,18 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
 import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NewsDetails from "./components/NewsCard/NewsDetails";
 
 function App() {
   return (
-    <div className="container">
-      <Home></Home>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/news/:id" element={<NewsDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;

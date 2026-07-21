@@ -1,4 +1,4 @@
-import logo from "../../assets/Visa-Master-Logo.png";
+import logo from "../../assets/Our_logo_new.png";
 import "./Navbar.css";
 
 function Nav() {
