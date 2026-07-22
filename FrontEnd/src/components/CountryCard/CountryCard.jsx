@@ -2,7 +2,7 @@ import React from "react";
 
 function CountryCard({ country, onSelect }) {
   return (
-    <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div className="col-lg-3 col-md-4 col-sm-6 mb-4" id="CountryCard">
       <div
         className="card h-100 shadow-sm border-0"
         style={{ cursor: "pointer" }}

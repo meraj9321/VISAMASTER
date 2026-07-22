@@ -1,19 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import CountryCard from "../components/CountryCard/CountryCard";
-import VisaModal from "../components/CountryCard/VisaModal";
 import countries from "../data/countries";
 
-function Services() {
-  const [selectedCountry, setSelectedCountry] = useState(null);
-
-  const handleSelect = (country) => {
-    setSelectedCountry(country);
-  };
-
-  const closeModal = () => {
-    setSelectedCountry(null);
-  };
-
+function Services({ onSelect }) {
   return (
     <section className="py-5 bg-light" id="services">
       <div className="container">
@@ -30,12 +19,10 @@ function Services() {
             <CountryCard
               key={country.id}
               country={country}
-              onSelect={handleSelect}
+              onSelect={onSelect}
             />
           ))}
         </div>
-
-        <VisaModal country={selectedCountry} closeModal={closeModal} />
       </div>
     </section>
   );
