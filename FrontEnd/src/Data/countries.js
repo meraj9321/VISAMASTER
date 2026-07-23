@@ -62,6 +62,18 @@ const countries = [
 
     documents: ["Passport", "Photograph", "Income Proof", "Hotel Booking"],
   },
+  {
+    id: 5,
+    name: "China",
+    shortName: "china",
+    flag: "https://flagcdn.com/w320/cn.png",
+    visaType: "Visitor Visa",
+    processingTime: "15 Days",
+    validity: "6 Months",
+    fees: "₹12,000",
+
+    documents: ["Passport", "Photograph", "Income Proof", "Hotel Booking"],
+  },
 ];
 
 export default countries;

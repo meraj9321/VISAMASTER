@@ -94,7 +94,7 @@ function B2bSection() {
 
                 <div className="row text-center">
                   <div className="col-6 mb-4">
-                    <h2 className="fw-bold text-primary">500+</h2>
+                    <h2 className="fw-bold text-primary">100+</h2>
                     <p className="text-muted mb-0">Business Partners</p>
                   </div>
 

@@ -1,10 +1,8 @@
 import { useState } from "react";
 
-import Navbar from "../components/navbar/Nav";
 import SearchSection from "../components/SearchSection/SearchSection";
 import NewsSection from "../components/NewsCard/NewsSection";
 import B2bSection from "../components/B2B_Section/B2bSection";
-import Footer from "../components/Footer/Footer";
 
 import Services from "./Services";
 
@@ -25,8 +23,6 @@ function Home() {
 
   return (
     <div className="container">
-      <Navbar />
-
       <SearchSection countries={countries} onSelect={handleSelect} />
 
       <NewsSection />
@@ -36,8 +32,6 @@ function Home() {
       <Services onSelect={handleSelect} />
 
       <VisaModal country={selectedCountry} closeModal={closeModal} />
-
-      <Footer />
     </div>
   );
 }

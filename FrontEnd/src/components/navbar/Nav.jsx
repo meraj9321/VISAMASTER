@@ -1,9 +1,10 @@
 import logo from "../../assets/Our_logo_new.png";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3 ">
+    <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3 container">
       <div className="container">
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="#">
@@ -34,25 +35,40 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarMenu">
           <ul className="navbar-nav mx-auto gap-lg-3">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/About"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 About
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#CountryCard">
+              <NavLink
+                to="/Services"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 Services
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Visa">
                 Visa
               </a>
             </li>
@@ -65,9 +81,11 @@ function Nav() {
           </ul>
 
           <div className="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-            <button className="btn btn-login px-4 py-2">Login</button>
+            <button className="btn btn-login px-4 py-2 btn-outline-success">
+              Admin_Login
+            </button>
 
-            <button className="btn btn-register px-4 py-2">Sign Up →</button>
+            {/*<button className="btn btn-register px-4 py-2">Sign Up →</button>*/}
           </div>
         </div>
       </div>

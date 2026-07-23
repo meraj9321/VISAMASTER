@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-dark text-light pt-5 pb-3">
+    <footer className="bg-dark text-light pt-5 pb-3 container">
       <div className="container">
         <div className="row gy-4">
           {/* Company Info */}
