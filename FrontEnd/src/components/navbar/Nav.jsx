@@ -74,9 +74,14 @@ function Nav() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
 

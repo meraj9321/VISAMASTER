@@ -1,0 +1,25 @@
+body {
+  background: #f8f9fa;
+}
+
+.contact-card {
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.owner-card {
+  border-top: 6px solid orange;
+}
