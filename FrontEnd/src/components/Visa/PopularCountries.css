@@ -1,0 +1,56 @@
+.popular-countries {
+  background: #f8f9fa;
+}
+
+.country-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
+
+.country-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.country-flag {
+  height: 200px;
+  overflow: hidden;
+}
+
+.country-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.country-card:hover .country-flag img {
+  transform: scale(1.08);
+}
+
+.country-body {
+  padding: 25px;
+}
+
+.country-body h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 8px;
+}
+
+.country-body .btn {
+  border-radius: 50px;
+  padding: 10px;
+}

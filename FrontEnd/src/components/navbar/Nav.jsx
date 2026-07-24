@@ -68,9 +68,14 @@ function Nav() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#Visa">
+              <NavLink
+                to="/Visa"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 Visa
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item">
@@ -90,7 +95,9 @@ function Nav() {
               Admin_Login
             </button>
 
-            {/*<button className="btn btn-register px-4 py-2">Sign Up →</button>*/}
+            <button className="btn btn-outline-primary px-4 py-2">
+              User_Login
+            </button>
           </div>
         </div>
       </div>

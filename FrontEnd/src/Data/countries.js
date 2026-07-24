@@ -15,6 +15,7 @@ const countries = [
       "Confirmed Flight Ticket",
       "Hotel Booking",
       "Bank Statement (Last 6 Months)",
+      "idv card",
     ],
   },
 

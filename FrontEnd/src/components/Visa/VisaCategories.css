@@ -1,0 +1,48 @@
+.visa-categories {
+  background: #ffffff;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.category-card:hover .icon-box {
+  background: #ffc107;
+  color: #000;
+}
+
+.category-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.category-card p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
